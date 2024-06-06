@@ -71,7 +71,7 @@ public class HighScores : MonoBehaviour
         }
     }
 
-    public (string, float) GetHighScore(int n)
+    public (string, float) GetHighScore(int n) // ENCAPSULATION
     {
         if (n >= highScores.Count || n < 0)
         {
@@ -81,12 +81,12 @@ public class HighScores : MonoBehaviour
         return (highScore.username, highScore.score);
     }
 
-    public int GetNHighScores()
+    public int GetNHighScores() // ENCAPSULATION
     {
         return highScores.Count;
     }
 
-    public void setCurrentUser(string username)
+    public void setCurrentUser(string username) // ENCAPSULATION
     {
         currentUsername = username;
     }

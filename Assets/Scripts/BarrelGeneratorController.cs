@@ -46,12 +46,12 @@ public class BarrelGeneratorController : MonoBehaviour
         }
     }
 
-    public void MoreBarrel()
+    public void MoreBarrel() // ABSTRACTION
     {
         this.spawnInterval *= 0.9f;
     }
 
-    public void SpeedUp()
+    public void SpeedUp() // ABSTRACTION
     {
         this.barrelSpeed *= 1.1f;
     }
